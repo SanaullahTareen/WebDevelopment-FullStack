@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.apple.com)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
