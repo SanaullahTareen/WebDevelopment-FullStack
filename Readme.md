@@ -1,263 +1,290 @@
-# 🚀 Full-Stack AI & Portfolio Web Application
+# Apple Website Clone
 
-[![Next.js](https://img.shields.io/badge/Next.js-14+-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0+-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Responsive](https://img.shields.io/badge/Responsive-Design-00D9FF?style=for-the-badge&logo=responsive&logoColor=white)](https://www.w3schools.com/css/css_rwd_intro.asp)
+[![No Dependencies](https://img.shields.io/badge/No-Dependencies-4CAF50?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
 
-A modern, high-performance **Full-Stack Portfolio & Machine Learning Showcase Platform** designed to display interactive AI/ML projects, serve heavy deep learning models in real-time, and present clean, responsive web architecture.
-
-This platform bridges cutting-edge **Frontend Engineering** (`.tsx`, `.jsx`, `.js`, Next.js, React, HTML/CSS) with robust **Backend Microservices** (`.py`, FastAPI, PyTorch, OpenCV, LLMs, YOLO) to deliver seamless, production-ready live web demos.
+A modern, fully responsive replica of the Apple website built with **vanilla HTML, CSS, and JavaScript**. Showcases clean UI/UX design patterns, smooth animations, and interactive product sections for iPhone, iPad, Mac, and Apple Watch.
 
 ---
 
-## 🌟 Key Highlights & Features
+## ✨ Features
 
-- **⚡ Modern Full-Stack Architecture**: Built with Next.js 14 App Router (`.tsx`/`.jsx`) on the frontend and asynchronous FastAPI (`.py`) on the backend.
-- **🤖 Heavy ML Model Serving**: High-throughput inference API deployment for large models (Computer Vision, Ultralytics YOLOv11/v8, LLMs/RAG, PyTorch Transformers, ONNX Runtime).
-- **🎨 Dynamic & Responsive UI**: Styled with Tailwind CSS and Framer Motion, featuring dark/light modes, interactive model parameter sliders, and real-time visualization canvas.
-- **📡 Real-Time Streaming & WebSockets**: Server-Sent Events (SSE) and WebSocket connections for real-time LLM token streaming and live frame object detection feeds.
-- **📊 Interactive Project Sandbox**: Built-in interactive demos allowing visitors to test models with custom sample inputs (images, audio, text prompts) directly in the browser.
-- **🐳 Production-Ready Containerization**: Fully dockerized backend service with optimized multi-stage builds for seamless cloud deployment (Render, AWS, Vercel).
-
----
-
-## 🛠️ Tech Stack & Languages
-
-### **Frontend (`.tsx`, `.jsx`, `.js`, `.html`, `.css`)**
-- **Framework**: [Next.js](https://nextjs.org/) (App Router), [React.js](https://reactjs.org/)
-- **Languages**: TypeScript (`.tsx`), JavaScript ES6+ (`.jsx`, `.js`), HTML5, CSS3
-- **Styling & UI**: Tailwind CSS, Lucide Icons, Framer Motion, Shadcn UI
-- **State & Data Fetching**: React Query / TanStack Query, Axios, WebSockets
-
-### **Backend & AI Engine (`.py`)**
-- **Core Runtime**: Python 3.10+
-- **Web Framework**: [FastAPI](https://fastapi.tiangolo.com/), Uvicorn (Asynchronous WSGI/ASGI)
-- **Deep Learning Frameworks**: [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/), TorchScript, ONNX Runtime
-- **Computer Vision**: OpenCV, Ultralytics YOLO (v8 / v11), Pillow, Albumentations
-- **NLP & LLM Architectures**: Hugging Face Transformers, Unsloth, LangChain, LlamaIndex, Sentence-Transformers
-- **Data Engineering & DB**: Pandas, NumPy, Apache Spark (PySpark), MongoDB, PostgreSQL, Redis
+- **🎨 Pixel-Perfect UI Design** – Faithful recreation of Apple's minimalist aesthetic
+- **📱 Fully Responsive** – Seamless experience across desktop, tablet, and mobile devices
+- **⚡ Smooth Animations** – CSS transitions and JavaScript-driven interactions for engaging UX
+- **🎯 Interactive Product Sections** – Dedicated pages for iPhone, iPad, Mac, and Apple Watch
+- **🖼️ Optimized Media Assets** – High-quality images and icons organized by product category
+- **🔧 Vanilla JavaScript** – No dependencies—lightweight and performant frontend
 
 ---
 
-## 🏗️ System Architecture
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| **HTML** | Semantic HTML5 structure |
+| **Styling** | Pure CSS3 with flexbox & grid layouts |
+| **Interactivity** | Vanilla JavaScript (ES6+) |
+| **No Frameworks** | Zero build tools—works directly in browser |
+
+---
+
+## 📁 Project Structure
 
 ```
-                                 ┌─────────────────────────────────────────┐
-                                 │       Client Browser / Frontend         │
-                                 │    Next.js 14 + React + TypeScript     │
-                                 │         (`.tsx` / `.jsx` / `.css`)      │
-                                 └────────────────────┬────────────────────┘
-                                                      │
-                                           HTTP / REST / WebSockets
-                                                      │
-                                                      ▼
-                                 ┌─────────────────────────────────────────┐
-                                 │        Backend Microservice API         │
-                                 │        FastAPI + Uvicorn (`.py`)        │
-                                 └──────────┬───────────────────┬──────────┘
-                                            │                   │
-                     ┌──────────────────────┘                   └──────────────────────┐
-                     ▼                                                                 ▼
-┌──────────────────────────────────────────┐                       ┌──────────────────────────────────────────┐
-│        Heavy ML/DL Inference Engine      │                       │        Databases & External Storage      │
-│ ┌──────────────────────────────────────┐ │                       │ ┌──────────────────────────────────────┐ │
-│ │ Ultralytics YOLOv11 / Computer Vision│ │                       │ │ MongoDB / PostgreSQL                 │ │
-│ ├──────────────────────────────────────┤ │                       │ ├──────────────────────────────────────┤ │
-│ │ PyTorch Transformers / HuggingFace   │ │                       │ │ Redis Cache (Inference Result Cache) │ │
-│ ├──────────────────────────────────────┤ │                       │ ├──────────────────────────────────────┤ │
-│ │ RAG Vector Index / LLM Pipelines     │ │                       │ │ Cloud Bucket (Image/Model Storage)   │ │
-│ └──────────────────────────────────────┘ │                       │ └──────────────────────────────────────┘ │
-└──────────────────────────────────────────┘                       └──────────────────────────────────────────┘
+apple-website-clone/
+├── index.html              # Main landing page (homepage)
+├── css/
+│   ├── style.css          # Global styles
+│   ├── responsive.css     # Mobile-first responsive breakpoints
+│   └── animations.css     # Keyframe animations and transitions
+├── js/
+│   ├── main.js            # Core interactivity & DOM manipulation
+│   ├── navigation.js      # Header/navigation menu handlers
+│   └── scrollEffects.js   # Scroll animations and parallax
+├── images/
+│   ├── hero/              # Hero section banners
+│   ├── products/          # Product-specific imagery
+│   └── icons/             # UI icons and badges
+├── iphone/
+│   ├── index.html         # iPhone product page
+│   └── styles.css         # iPhone-specific styling
+├── ipad/
+│   ├── index.html         # iPad product page
+│   └── styles.css         # iPad-specific styling
+├── mac/
+│   ├── index.html         # Mac product page
+│   └── styles.css         # Mac-specific styling
+├── watch/
+│   ├── index.html         # Apple Watch product page
+│   └── styles.css         # Watch-specific styling
+├── scripts/
+│   └── upload.py          # Python automation script for GitHub integration
+└── .claude/               # Claude AI configuration files
+
 ```
-
----
-
-## 📁 Repository Structure
-
-```directory
-├── backend/                        # Python FastAPI Backend (`.py`)
-│   ├── app/
-│   │   ├── api/                    # REST & WebSocket API Routes
-│   │   │   ├── v1/
-│   │   │   │   ├── cv_inference.py # Computer Vision endpoints (YOLO, OpenCV)
-│   │   │   │   ├── llm_rag.py      # LLM & RAG query streaming endpoints
-│   │   │   │   └── analytics.py    # Big Data / Data processing endpoints
-│   │   ├── core/                   # Security, CORS, Configuration
-│   │   ├── models/                 # Model Loader, Preprocessing & Inference handlers
-│   │   └── services/               # Core AI business logic & utility modules
-│   ├── weights/                    # Heavy Model Weights (.pt, .onnx, .bin) [Git LFS]
-│   ├── Dockerfile                  # Docker configuration for FastAPI server
-│   ├── requirements.txt            # Python dependencies
-│   └── main.py                     # ASGI Application Entrypoint
-│
-├── frontend/                       # Next.js Frontend App (`.tsx`, `.jsx`, `.js`)
-│   ├── src/
-│   │   ├── app/                    # Next.js App Router pages
-│   │   │   ├── page.tsx            # Main Landing / Portfolio Page
-│   │   │   ├── projects/           # Showcase projects dynamic routing
-│   │   │   └── demos/              # Interactive Live Model Testing UI
-│   │   ├── components/             # Reusable UI Components (`.tsx`, `.jsx`)
-│   │   │   ├── ui/                 # Buttons, Cards, Modals, Loaders
-│   │   │   ├── CanvasDetector.tsx  # Interactive Object Detection Canvas
-│   │   │   └── LLMChatBox.tsx      # Token-streaming Chat Component
-│   │   ├── hooks/                  # Custom React Hooks
-│   │   ├── styles/                 # Global Tailwind CSS Styles (`globals.css`)
-│   │   └── lib/                    # API clients, Axios instances, WebSockets
-│   ├── public/                     # Static assets, images, icons
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── tailwind.config.js
-│
-└── README.md                       # Repository Documentation
-```
-
----
-
-## 💡 Showcase Projects Included in Platform
-
-### 1. 👁️ Real-Time Automated Visual Inspection Engine
-- **Stack**: Next.js (`.tsx`), FastAPI (`.py`), Ultralytics YOLOv11, OpenCV, PyTorch.
-- **Description**: Web-based computer vision tool for industrial defect detection and object tracking. Uploads image/video frames or captures camera stream to render bounding boxes and defect metrics in real-time.
-
-### 2. 🧠 Retrieval-Augmented Generation (RAG) & LLM Assistant
-- **Stack**: React (`.jsx`/`.tsx`), Python (`.py`), LangChain, LlamaIndex, Unsloth, Hugging Face.
-- **Description**: Custom domain chatbot utilizing fine-tuned open-source LLMs with vector search for instant context-aware retrieval and dynamic document scoring.
-
-### 3. 📊 E-Commerce Streaming Analytics & ML Pipeline
-- **Stack**: Python (`.py`), PySpark, Apache Kafka, MongoDB, Chart.js (`.jsx`).
-- **Description**: Real-time streaming pipeline processing high-volume transactions with embedded customer churn prediction and dynamic BI dashboard visualizers.
-
-### 4. 🏥 Medical Imaging Diagnostic Visualizer (Brain CT Scanner)
-- **Stack**: Next.js, Python, PyTorch, TorchScript, Grad-CAM heatmap overlay.
-- **Description**: Diagnostic assistance portal serving deep learning vision models that classify head CT scans and highlight ROI bounding boxes for medical reporting.
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Node.js**: v18.0.0 or higher
-- **npm** or **yarn** or **pnpm**
-- **Python**: v3.10 or higher
-- **Git LFS** (for downloading large model weights if cloning locally)
-
----
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- No installation or build tools required
 
 ### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/your-username/fullstack-ai-portfolio.git
-cd fullstack-ai-portfolio
+git clone https://github.com/SanaullahTareen/apple-website-clone.git
+cd apple-website-clone
 ```
 
----
+### 2. Open in Browser
 
-### 2. Backend Setup (`FastAPI` & Python Models)
-
+**Option A: Simple Method**
 ```bash
-# Navigate to backend directory
-cd backend
-
-# Create virtual environment
-python -m venv venv
-
-# Activate environment
-# On Linux/macOS:
-source venv/bin/activate
-# On Windows:
-# venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Start local development server
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
+# Navigate to project directory and open index.html
+open index.html
 ```
 
-The FastAPI backend interactive docs will be available at `http://localhost:8000/docs`.
-
----
-
-### 3. Frontend Setup (`Next.js` / `React` / `TypeScript`)
-
+**Option B: Local Server (Recommended)**
 ```bash
-# Open new terminal and navigate to frontend directory
-cd frontend
+# Using Python 3
+python -m http.server 8000
 
-# Install dependencies
-npm install
+# Using Node.js http-server
+npx http-server
 
-# Set up environment variables
-cp .env.example .env.local
-
-# Run development server
-npm run dev
+# Using Ruby
+ruby -run -ehttpd . -p8000
 ```
 
-Open `http://localhost:3000` in your browser to view the application.
+Then visit: `http://localhost:8000`
 
 ---
 
-## ⚡ Model Deployment Optimization Strategies
+## 📖 Usage
 
-Serving heavy deep learning models on full-stack web platforms requires optimized backend strategies:
+### Navigation
+- **Homepage**: Browse all featured products
+- **Product Pages**: Click on iPhone, iPad, Mac, or Watch for detailed sections
+- **Responsive Design**: Resize browser to see mobile/tablet adaptations
+- **Interactive Elements**: Hover effects, smooth scroll animations, and dynamic carousels
 
-1. **Lazy Model Loading & Memory Caching**:
-   - Heavy weights (PyTorch `.pt` or Hugging Face models) are initialized in worker memory upon server boot or lazy-loaded using singleton patterns to avoid execution latency per request.
-2. **ONNX Runtime & TensorRT Conversion**:
-   - PyTorch and YOLO models are converted to ONNX / TensorRT formats, reducing model inference times by up to **3x–5x** with minimal accuracy trade-off.
-3. **Asynchronous Non-Blocking Processing**:
-   - FastAPI async routes combined with thread pools keep the event loop unblocked while CPU/GPU heavy computations execute.
-4. **Batching & Streaming**:
-   - Implemented dynamic request batching for vision models and Server-Sent Events (SSE) for incremental token streaming from LLM pipelines.
+### Customization
+
+#### Change Colors & Branding
+Edit CSS variables in `css/style.css`:
+```css
+:root {
+  --primary-bg: #ffffff;
+  --text-dark: #000000;
+  --accent-color: #0071e3;
+}
+```
+
+#### Add New Product Section
+1. Create new folder: `product-name/`
+2. Add `index.html` file with product markup
+3. Link from navigation in `index.html`
+
+#### Modify Content
+All text content is in HTML files—edit directly without build steps.
 
 ---
 
-## 🌐 Deployment Configuration
+## 🎯 Key Pages
 
-### **Frontend Deployment (Vercel / Netlify)**
-- Automatically built and deployed via Vercel GitHub integration.
-- Set environment variables in Vercel settings:
-  ```env
-  NEXT_PUBLIC_API_BASE_URL=https://your-backend-api.onrender.com
-  ```
+| Page | Path | Description |
+|------|------|-------------|
+| Homepage | `/index.html` | Main landing with featured products |
+| iPhone | `/iphone/index.html` | iPhone models and specs showcase |
+| iPad | `/ipad/index.html` | iPad product lineup |
+| Mac | `/mac/index.html` | Mac computers and accessories |
+| Apple Watch | `/watch/index.html` | Watch models and features |
 
-### **Backend Deployment (Docker / Render / AWS)**
-Build and test the Docker container locally:
+---
+
+## ⚡ Performance & Optimization
+
+✅ **Lightweight**: No frameworks or dependencies  
+✅ **Fast Load**: Minimal CSS/JS—optimized media assets  
+✅ **Browser Compatible**: Works on all modern browsers  
+✅ **SEO Friendly**: Semantic HTML structure  
+✅ **Mobile First**: Progressive enhancement for all screen sizes
+
+---
+
+## 🎨 Design Highlights
+
+- **Minimalist Layout**: Clean spacing and typography inspired by Apple's design language
+- **Smooth Transitions**: CSS animations for hover states and scroll effects
+- **Color Palette**: Apple's signature white, black, and blue accents
+- **Typography**: System fonts for optimal readability
+- **Grid System**: Flexbox-based responsive layouts
+
+---
+
+## 🔄 Deployment
+
+### Deploy to GitHub Pages
 ```bash
-cd backend
-docker build -t fullstack-ai-backend .
-docker run -p 8000:8000 fullstack-ai-backend
+git add .
+git commit -m "Update website"
+git push origin main
+```
+
+Then enable GitHub Pages in repo settings (Settings → Pages → Deploy from `main` branch).
+
+Site will be live at: `https://SanaullahTareen.github.io/apple-website-clone`
+
+### Deploy to Netlify / Vercel
+1. Connect repository to Netlify/Vercel
+2. Set build command: `(leave empty)`
+3. Set publish directory: `./`
+4. Deploy
+
+---
+
+## 📝 Scripts & Automation
+
+Located in `scripts/` folder:
+
+- **`upload.py`** – Python utility for automated GitHub integration (Git LFS, batch commits)
+
+### Run Upload Script
+```bash
+python scripts/upload.py
 ```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!  
-Feel free to check out the [issues page](https://github.com/your-username/fullstack-ai-portfolio/issues).
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Commit (`git commit -m 'Add amazing feature'`)
+5. Push to branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the **MIT License**—see the [LICENSE](LICENSE) file for details.
+
+**Note**: This is a fan-made project for educational purposes. Apple® is a registered trademark of Apple Inc.
 
 ---
 
-## ✉️ Contact & Socials
+## 👨‍💻 Author
 
-- **Developer**: Sanaullah Tareen
-- **GitHub**: [@SanaullahTareen07](https://github.com/SanaullahTareen07)
-- **LinkedIn**: [Sanaullah Tareen](https://www.linkedin.com/in/sanaullah-tareen)
+**Sanaullah Tareen**
+
+- **GitHub**: [@SanaullahTareen](https://github.com/SanaullahTareen)
 - **Hugging Face**: [@SanaullahTareen07](https://huggingface.co/SanaullahTareen07)
+- **LinkedIn**: [Sanaullah Tareen](https://www.linkedin.com/in/sanaullah-tareen)
 - **Portfolio**: [sanaullahtareen.me](https://sanaullahtareen.me)
 
 ---
-<p align="center">
-  Designed & Developed with ❤️ using Python, React, Next.js, and PyTorch.
-</p>
+
+## 🔗 Resources & Links
+
+- [Apple.com](https://www.apple.com) – Inspiration source
+- [MDN Web Docs](https://developer.mozilla.org) – HTML/CSS/JS references
+- [CSS Tricks](https://css-tricks.com) – Advanced CSS patterns
+
+---
+
+## ⚙️ Browser Support
+
+| Browser | Support |
+|---------|---------|
+| Chrome/Edge | ✅ Full |
+| Firefox | ✅ Full |
+| Safari | ✅ Full |
+| Mobile Safari | ✅ Full |
+| IE 11 | ⚠️ Limited |
+
+---
+
+## 📧 Feedback & Issues
+
+Found a bug or have suggestions? [Open an issue](https://github.com/SanaullahTareen/apple-website-clone/issues) on GitHub.
+
+---
+
+## 🌟 Show Your Support
+
+If this project helped you, please give it a ⭐ on GitHub!
+
+---
+
+**Made with ❤️ using HTML, CSS, and JavaScript**
+
+---
+
+<div align="center">
+
+### 🎯 Crafted by **Sanaullah Tareen** 
+
+<sub>
+  
+  **Full-Stack Developer** | **AI/ML Engineer** | **Computer Vision Specialist**
+  
+  *Building production-ready applications with modern web technologies*
+  
+  [![GitHub](https://img.shields.io/badge/GitHub-@SanaullahTareen-181717?style=flat-square&logo=github)](https://github.com/SanaullahTareen)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sanaullah%20Tareen-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/sanaullah-tareen)
+  [![HuggingFace](https://img.shields.io/badge/HuggingFace-@SanaullahTareen07-FFD21E?style=flat-square&logo=huggingface)](https://huggingface.co/SanaullahTareen07)
+  [![Portfolio](https://img.shields.io/badge/Portfolio-sanaullahtareen.me-000000?style=flat-square&logo=web)](https://sanaullahtareen.me)
+
+</sub>
+
+</div>
